@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<!-- Static assets - Used to load the Favicon -->
+{% load static %}
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <title>
+      Baykar APP
+  </title>
+
+  <!-- Favicon - loaded as static -->
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+  <link href="{{ request.user.firm.firm_logo.url }}" rel="shortcut icon" type="image/png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="{% static 'assets/js/plugins/nucleo/css/nucleo.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+          integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="{% static 'assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css' %}" rel="stylesheet"/>
+    <!-- CSS Files -->
+    <link href="{% static 'assets/css/argon-dashboard.css?v=1.1.0' %}" rel="stylesheet"/>
+    <!-- Specific CSS goes HERE -->
+    {% block stylesheets %}{% endblock stylesheets %}
+
+</head>
+
+<body class="">
+  {% if request.user.is_authenticated %}
+
+  {% endif %}
+
+  <div class="main-content">
+      {% if request.user.is_authenticated %}
+
+        {% include "includes/navigation.html" %}
+
+      {% endif %}
+
+    {% block content %}{% endblock content %}
+
+  </div>
+
+  {% include "includes/scripts.html" %}
+
+  <!-- Specific JS goes HERE --> 
+  {% block javascripts %}{% endblock javascripts %}
+
+</body>
+
+</html>

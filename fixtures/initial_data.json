@@ -1,0 +1,65 @@
+[
+    {
+        "model": "api.team",
+        "pk": 1,
+        "fields": {
+            "name": "Kanat"
+        }
+    },
+    {
+        "model": "api.team",
+        "pk": 2,
+        "fields": {
+            "name": "Gövde"
+        }
+    },
+    {
+        "model": "api.team",
+        "pk": 3,
+        "fields": {
+            "name": "Kuyruk"
+        }
+    },
+    {
+        "model": "api.team",
+        "pk": 4,
+        "fields": {
+            "name": "Aviyonik"
+        }
+    },
+    {
+        "model": "api.team",
+        "pk": 5,
+        "fields": {
+            "name": "Montaj"
+        }
+    },
+    {
+        "model": "api.aircraft",
+        "pk": 1,
+        "fields": {
+            "name": "TB2"
+        }
+    },
+    {
+        "model": "api.aircraft",
+        "pk": 2,
+        "fields": {
+            "name": "TB3"
+        }
+    },
+    {
+        "model": "api.aircraft",
+        "pk": 3,
+        "fields": {
+            "name": "Akıncı"
+        }
+    },
+    {
+        "model": "api.aircraft",
+        "pk": 4,
+        "fields": {
+            "name": "Kızıl Elma"
+        }
+    }
+]
